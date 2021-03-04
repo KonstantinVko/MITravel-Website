@@ -4,12 +4,14 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
+
 .hero-section {
-    height: 900px;
+    height: 940px;
     color: white;
     position: relative;
     overflow: hidden;
 }
+
 .hero-section .wrap {
     height: 96%;
     display: flex;
@@ -17,29 +19,35 @@
     justify-content: space-between;
     padding: 50px 100px 0;
 }
+
 .hero-section .header {
     display: flex;
     justify-content: space-between;
 }
+
 .hero-section .header .icons {
     display: flex;
     width: 50px;
     justify-content: space-between;
 }
+
 .hero-section .header .logo {
-font-size: 22px;
+    font-size: 22px;
 
 }
+
 .hero-section .burger {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .hero-section .burger span {
     width: 48px;
     height: 2px;
     background: white;
 }
+
 .hero-section .text {
     display: flex;
     flex-direction: column;
@@ -47,21 +55,26 @@ font-size: 22px;
     justify-content: space-between;
     height: 250px;
 }
+
 .h3-title {
     font-size: 80px;
     font-weight: bold;
 }
+
 .hero-section p {
     font-size: 18px;
 }
+
 .hero-section .search {
     width: 100%;
     display: flex;
 }
+
 .hero-section .search label {
     width: 100%;
     display: flex;
 }
+
 .hero-section .search input[type='search'] {
     width: 70%;
     height: 100px;
@@ -70,6 +83,7 @@ font-size: 22px;
     padding: 50px;
     outline: none;
 }
+
 .hero-section .search input[type='search'] {
     width: 70%;
     height: 100px;
@@ -78,10 +92,12 @@ font-size: 22px;
     padding: 50px;
     outline: none;
 }
+
 .hero-section .search input[type='search']::placeholder {
     font-weight: bold;
     color: #1C2E3D;
 }
+
 .hero-section .search button[type='submit'] {
     color: white;
     width: 30%;
@@ -90,9 +106,11 @@ font-size: 22px;
     background: #73AFBA;
     outline: none;
 }
+
 .hero-section .search i {
     margin-left: 50px;
 }
+
 .hero-section video {
     position: absolute;
     z-index: -1;
@@ -104,28 +122,36 @@ font-size: 22px;
     margin-top: 100px;
     padding: 0 100px;
 }
+
 .cards .h3-title {
     color: #1C2E3D;
 }
+
 .cards-wrap {
     display: flex;
     margin-top: 70px;
 }
-.grid__column:first-child .card-insight__img{
+
+.grid__column:first-child .card-insight__img {
     background: url("../images/card-1.jpg") no-repeat center;
 }
-.grid__column:nth-child(2) .card-insight__img{
+
+.grid__column:nth-child(2) .card-insight__img {
     background: url("../images/card-2.jpg") no-repeat center;
 }
-.grid__column:nth-child(3) .card-insight__img{
+
+.grid__column:nth-child(3) .card-insight__img {
     background: url("../images/card-3.jpg") no-repeat;
 }
-.grid__column:last-child .card-insight__img{
+
+.grid__column:last-child .card-insight__img {
     background: url("../images/card-4.jpg") no-repeat;
 }
+
 .grid__column:not(.grid__column:last-child) {
     margin-right: 20px;
 }
+
 .card-insight {
     display: flex;
     width: 100%;
@@ -140,6 +166,7 @@ font-size: 22px;
     padding: 0;
     background-color: #474747;
 }
+
 .card-insight__img {
     position: absolute;
     top: 0;
@@ -154,10 +181,12 @@ font-size: 22px;
     transform: scale(1.15);
     opacity: 0.6;
 }
+
 .card-insight:hover .card-insight__img {
     transform: scale(1);
     opacity: 0.3;
 }
+
 .card-insight__title {
     color: #ffffff;
     text-align: center;
@@ -168,9 +197,11 @@ font-size: 22px;
     transform: translate3d(0, 0, 0);
     margin-bottom: 100px;
 }
+
 .card-insight:hover .card-insight__title {
     transform: translate3d(0, -40px, 0);
 }
+
 .card-insight-overlay {
     position: absolute;
     left: 0;
@@ -184,10 +215,12 @@ font-size: 22px;
     flex-direction: column;
     align-items: center;
 }
+
 .card-insight:hover .card-insight-overlay {
     opacity: 1;
     transform: translate3d(0, 20px, 0) scale(1);
 }
+
 .card-insight-overlay__text {
     color: #ffffff;
     text-align: center;
@@ -195,9 +228,11 @@ font-size: 22px;
     line-height: 2;
     margin-bottom: 10px;
 }
+
 .card-insight-overlay .button {
     margin: 10px auto 0;
 }
+
 button.learn-more {
     transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
     font-weight: 900;
@@ -212,6 +247,118 @@ button.learn-more {
     align-items: center;
     border-radius: 7px;
 }
+
 button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
     letter-spacing: 0.125rem;
 }
+
+.stories {
+    height: 940px;
+    margin-top: 100px;
+    display: flex;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.stories .text {
+    width: 65%;
+    padding: 50px 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.stories .text .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.stories .featured-icon {
+    background: #E8594E;
+    width: 132px;
+    height: 48px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.stories .text h3 {
+    font-size: 48px;
+}
+
+.stories .text p {
+    width: 60%;
+}
+
+.stories button {
+    width: 266px;
+    height: 80px;
+    background: #73AFBA;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    border: none;
+}
+
+.stories .featured {
+    padding: 0 100px;
+    width: 25%;
+    height: 100%;
+    background: rgba(28, 46, 61, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stories video {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+.stories .featured h3 {
+    font-size: 64px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 100px;
+}
+
+.stories-block {
+    width: 368px;
+    height: 473px;
+}
+
+.story {
+    height: 20%;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+}
+
+.story .story-teller {
+    height: 70px;
+    width: 70px;
+    background: url('../images/woman-travel-png.png') no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.story .quote {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.story .info {
+    display: flex;
+}
+.story .date {
+    color: #9d9e9e;
+}
+
