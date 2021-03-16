@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -16,6 +18,8 @@
 </head>
 <body>
 <div class="main-container">
+
+
     <div class="hero-section">
         <video autoplay loop muted>
             <source src="videos/hero-video.mp4">
@@ -47,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="cards" data-aos="fade-up" data-aos-once="true">
+    <div class="cards" data-aos="fade-up" data-aos-once="true" data-aos-duration="30020">
         <h3 class="h3-title page-section__title">Become A Travel Pro In <br>One Easy Lesson</h3>
         <div class="cards-wrap">
             <div class="grid__column card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
@@ -96,10 +100,10 @@
             </div>
         </div>
     </div>
-    <div class="stories">
-        <video autoplay loop muted>
-            <source src="videos/Untitled.mp4">
-        </video>
+    <div id="stories" class="stories" data-aos="fade" data-aos-duration="40020" data-aos-once="true">
+<!--        <video autoplay loop muted>-->
+<!--            <source src="videos/Untitled.mp4">-->
+<!--        </video>-->
         <div class="text">
             <div class="wrap">
                 <div class="featured-icon">FEATURED</div>
@@ -111,47 +115,61 @@
         </div>
         <div class="featured">
             <h3>Featured <br>Stories</h3>
-            <div class="stories-block" data-aos="fade-left">
-                <div class="story">
+            <div class="stories-block" data-aos="fade-left" data-aos-once="true">
+                <div class="story" data-aos="fade-left" data-aos-delay="50" data-aos-once="true" onclick="changeBlock()">
                     <div class="info">
-                        <div class="story-teller"></div>
+                        <div class="story-teller1"></div>
                         <div class="quote">
                             <span>Do A Sporting Stag Do In Birmingham</span>
                             <span class="date">13 Dec 2020</span>
                         </div>
                     </div>
                 </div>
-                <div class="story">
+                <div class="story" data-aos="fade-left" data-aos-delay="100" data-aos-once="true" onclick="changeBlock()">
                     <div class="info">
-                        <div class="story-teller"></div>
+                        <div class="story-teller2"></div>
                         <div class="quote">
                             <span>From Wetlands To Amsterdam</span>
-                            <span class="date">13 Dec 2020</span>
+                            <span class="date">17 Dec 2020</span>
                         </div>
                     </div>
                 </div>
-                <div class="story">
+                <div class="story" data-aos="fade-left" data-aos-delay="150" data-aos-once="true" onclick="changeBlock()">
                     <div class="info">
-                        <div class="story-teller"></div>
+                        <div class="story-teller3"></div>
                         <div class="quote">
                             <span>Low Cost Vacation On Water</span>
-                            <span class="date">13 Dec 2020</span>
+                            <span class="date">16 Nov 2020</span>
                         </div>
                     </div>
                 </div>
-                <div class="story">
+                <div class="story"  data-aos="fade-left" data-aos-delay="200" data-aos-once="true" onclick="changeBlock()">
                     <div class="info">
-                        <div class="story-teller"></div>
+                        <div class="story-teller4"></div>
                         <div class="quote">
                             <span>Rise And Fall Of A Genius</span>
-                            <span class="date">13 Dec 2020</span>
+                            <span class="date">13 Jan 2020</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+<div class="featured-videos-slider">
+    <h3 class="h3-title">Featured Videos</h3>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"></div>
+        </div>
+    </div>
 </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 <script src="main.js"></script>
 <script>

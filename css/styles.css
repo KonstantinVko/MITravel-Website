@@ -3,6 +3,7 @@
     height: 6000px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 .hero-section {
@@ -63,6 +64,7 @@
 
 .hero-section p {
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .hero-section .search {
@@ -259,6 +261,8 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
     color: white;
     position: relative;
     overflow: hidden;
+    background: url("../images/Surf-Air-Pilatus_1.jpg") no-repeat;
+    background-size: cover;
 }
 
 .stories .text {
@@ -326,6 +330,7 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
     font-weight: bold;
     align-self: flex-start;
     margin-bottom: 100px;
+    margin-left: 20px;
 }
 
 .stories-block {
@@ -338,15 +343,42 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
     border-bottom: 1px solid #d6d6d6;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.story:hover {
+    background: #1c2e3d9e;
 }
 
-.story .story-teller {
+.story .story-teller1 {
     height: 70px;
     width: 70px;
-    background: url('../images/woman-travel-png.png') no-repeat;
+    background: url("../images/woman-travel-png.png") no-repeat;
     border-radius: 50%;
     background-size: contain;
 }
+.story .story-teller2 {
+    height: 70px;
+    width: 70px;
+    background: url("../images/woman-travel-png-1.jpg") no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+}
+.story .story-teller3 {
+    height: 70px;
+    width: 70px;
+    background: url("../images/woman-travel-png-2.jpg") no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+}
+.story .story-teller4 {
+    height: 70px;
+    width: 70px;
+    background: url("../images/woman-travel-png-3.jpg") no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+}
+
 
 .story .quote {
     font-weight: bold;
@@ -360,5 +392,37 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
 }
 .story .date {
     color: #9d9e9e;
+}
+
+
+.featured-videos-slider {
+    height: 700px;
+    width: 80%;
+    margin: 200px auto;
+}
+.featured-videos-slider h3 {
+    color: #1C2E3D;
+    text-align: center;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-size: cover;
+    width: 700px;
+    height: 500px;
+    background: #1C2E3D center;
+    border-radius: 20px;
+}
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0));
+}
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0));
+
 }
 
