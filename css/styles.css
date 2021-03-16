@@ -134,6 +134,10 @@
     margin-top: 70px;
 }
 
+button.learn-more {
+    border: none;
+}
+
 .grid__column:first-child .card-insight__img {
     background: url("../images/card-1.jpg") no-repeat center;
 }
@@ -417,6 +421,8 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
     height: 500px;
     background: #1C2E3D center;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 .swiper-container-3d .swiper-slide-shadow-left {
     background-image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0));
@@ -424,5 +430,32 @@ button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
 .swiper-container-3d .swiper-slide-shadow-right {
     background-image: linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0));
 
+}
+
+
+.swiper-slide video {
+    height: 520px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.play-button {
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #E8594E;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 15px solid transparent;
+    margin-left: 6px;
 }
 

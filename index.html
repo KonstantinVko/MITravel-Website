@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -101,9 +101,9 @@
         </div>
     </div>
     <div id="stories" class="stories" data-aos="fade" data-aos-duration="40020" data-aos-once="true">
-<!--        <video autoplay loop muted>-->
-<!--            <source src="videos/Untitled.mp4">-->
-<!--        </video>-->
+        <!--        <video autoplay loop muted>-->
+        <!--            <source src="videos/Untitled.mp4">-->
+        <!--        </video>-->
         <div class="text">
             <div class="wrap">
                 <div class="featured-icon">FEATURED</div>
@@ -116,7 +116,8 @@
         <div class="featured">
             <h3>Featured <br>Stories</h3>
             <div class="stories-block" data-aos="fade-left" data-aos-once="true">
-                <div class="story" data-aos="fade-left" data-aos-delay="50" data-aos-once="true" onclick="changeBlock()">
+                <div class="story" data-aos="fade-left" data-aos-delay="50" data-aos-once="true"
+                     onclick="changeBlock()">
                     <div class="info">
                         <div class="story-teller1"></div>
                         <div class="quote">
@@ -125,7 +126,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="story" data-aos="fade-left" data-aos-delay="100" data-aos-once="true" onclick="changeBlock()">
+                <div class="story" data-aos="fade-left" data-aos-delay="100" data-aos-once="true"
+                     onclick="changeBlock()">
                     <div class="info">
                         <div class="story-teller2"></div>
                         <div class="quote">
@@ -134,7 +136,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="story" data-aos="fade-left" data-aos-delay="150" data-aos-once="true" onclick="changeBlock()">
+                <div class="story" data-aos="fade-left" data-aos-delay="150" data-aos-once="true"
+                     onclick="changeBlock()">
                     <div class="info">
                         <div class="story-teller3"></div>
                         <div class="quote">
@@ -143,7 +146,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="story"  data-aos="fade-left" data-aos-delay="200" data-aos-once="true" onclick="changeBlock()">
+                <div class="story" data-aos="fade-left" data-aos-delay="200" data-aos-once="true"
+                     onclick="changeBlock()">
                     <div class="info">
                         <div class="story-teller4"></div>
                         <div class="quote">
@@ -157,19 +161,43 @@
     </div>
 
 
-<div class="featured-videos-slider">
-    <h3 class="h3-title">Featured Videos</h3>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"></div>
+    <div class="featured-videos-slider">
+        <h3 class="h3-title">Featured Videos</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video id="muntains_vid" loop muted>
+                        <source src="videos/mountains.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo2()">
+                        <div class="triangle">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video id="beach_vid" loop muted>
+                        <source src="videos/beach.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo1()">
+                        <div class="triangle">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video id="sand_vid" loop muted>
+                        <source src="videos/sand.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo3()">
+                        <div class="triangle">
+                        </div>
+                    </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>
-</div>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 <script src="main.js"></script>
 <script>
